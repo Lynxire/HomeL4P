@@ -57,10 +57,11 @@ public class Main {
 //            }
 //        }
         // 5
-//        for (int os = a.length - 1 ; os >= 0; os--) {
-//
-//                 System.out.print(" " + a[os]);
-//            }
+//       int j = a.length;
+//        while (j > 0){
+//            j--;
+//            System.out.print(a[j]);
+//        }
 
         //6
 
