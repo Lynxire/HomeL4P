@@ -54,8 +54,7 @@ public class Main {
 //            }
 //        }
         // 5
-//            // Input array
-//            System.out.println("Input Array :" + Arrays.toString(a));
+//
 //
 //            // Declaring variables for array reversal
 //            int n = a.length;
