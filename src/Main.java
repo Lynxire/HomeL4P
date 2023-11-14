@@ -1,32 +1,40 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] a = {1,2,3,4,0};
-        //1
-//        for (int i = 0; i <= a.length; i++) {
-//            System.out.println(i);
-//        }
-//        for (int i = a.length; i >= 0 ; i--) {
-//            System.out.println(i);
-//        }
+        Scanner scanner = new Scanner(System.in);
+        int write = scanner.nextInt();
+
+        int[] a = new int[write];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int)((Math.random() * 100));
+        }
+
+       // 1
+        for (int i = 0; i <= a.length; i++) {
+            System.out.println(i);
+        }
+        for (int i = a.length; i >= 0 ; i--) {
+            System.out.println(i);
+        }
 
         //2
-//        int j = a[0];
-//        for (int i = 0; i < a.length; i++) {
-//            j = a[i];
-//
-//
-//        }
-//        int o = Math.max(a[0],j);
-//        int o1 = Math.min(a[0],j);
-//        System.out.println(Math.min(a[0], j));
-//        System.out.println(Math.max(a[0], j));
+        int j = a[0];
+        for (int i = 0; i < a.length; i++) {
+            j = a[i];
+
+
+        }
+        System.out.println(Math.min(a[0], j));
+        System.out.println(Math.max(a[0], j));
 
           //3
-//        System.out.println(Arrays.binarySearch(a, o));
-//        System.out.println(Arrays.binarySearch(a, o1));
+          int o = Math.max(a[0],j);
+        int o1 = Math.min(a[0],j);
+        System.out.println(Arrays.binarySearch(a, o));
+        System.out.println(Arrays.binarySearch(a, o1));
 
         //4
 //
@@ -80,6 +88,7 @@ public class Main {
 //
 //        }
 //        System.out.println(cc);
+        //7
 
 
 
