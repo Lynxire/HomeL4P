@@ -10,31 +10,34 @@ public class Main {
         int[] a = new int[write];
         for (int i = 0; i < a.length; i++) {
             a[i] = (int)((Math.random() * 100));
+            System.out.println(a[i]);
         }
 
-       // 1
-        for (int i = 0; i <= a.length; i++) {
-            System.out.println(i);
-        }
-        for (int i = a.length; i >= 0 ; i--) {
-            System.out.println(i);
-        }
-
-        //2
-        int j = a[0];
-        for (int i = 0; i < a.length; i++) {
-            j = a[i];
-
-
-        }
-        System.out.println(Math.min(a[0], j));
-        System.out.println(Math.max(a[0], j));
-
-          //3
-          int o = Math.max(a[0],j);
-        int o1 = Math.min(a[0],j);
-        System.out.println(Arrays.binarySearch(a, o));
-        System.out.println(Arrays.binarySearch(a, o1));
+//       // 1
+//        int mass = a[0];
+//        for (int i = 0; i <= a.length; i++) {
+//            System.out.println(i);
+//        }
+//
+//        for (int i = a.length; i >= 0 ; i--) {
+//            System.out.println(i);
+//        }
+//
+//        //2
+//        int j = a[0];
+//        for (int i = 0; i < a.length; i++) {
+//            j = a[i];
+//
+//
+//        }
+//        System.out.println(Math.min(a[0], j));
+//        System.out.println(Math.max(a[0], j));
+//
+//          //3
+//          int o = Math.max(a[0],j);
+//        int o1 = Math.min(a[0],j);
+//        System.out.println(Arrays.binarySearch(a, o));
+//        System.out.println(Arrays.binarySearch(a, o1));
 
         //4
 //
@@ -54,21 +57,10 @@ public class Main {
 //            }
 //        }
         // 5
-//            // Input array
-//            System.out.println("Input Array :" + Arrays.toString(a));
+//        for (int os = a.length - 1 ; os >= 0; os--) {
 //
-//            // Declaring variables for array reversal
-//            int n = a.length;
-//            int[] temp = new int[n];
-//
-//            // Reversal of array using Temporary variable
-//            for(int i = n - 1; i > -1; i--) {
-//                // Storing the elements of the input array in reverse order
-//                temp[n - i - 1] = a[i];
+//                 System.out.print(" " + a[os]);
 //            }
-//
-//            // Output
-//            System.out.println("Reversed Array :" + Arrays.toString(temp));
 
         //6
 
