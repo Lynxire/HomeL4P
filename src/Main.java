@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int write = scanner.nextInt();
-
-        int[] a = new int[write];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = (int)((Math.random() * 100));
-            System.out.println(a[i]);
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        int write = scanner.nextInt();
+//
+//        int[] a = new int[write];
+//        for (int i = 0; i < a.length; i++) {
+//            a[i] = (int)((Math.random() * 100));
+//            System.out.println(a[i]);
+//        }
 
 //       // 1
 //        int mass = a[0];
@@ -82,6 +82,22 @@ public class Main {
 //        }
 //        System.out.println(cc);
         //7
+        int[] a = {9,9,9};
+        String s = Arrays.toString(a).replace(",", "");
+        s = s.replace(" ", "");
+        s = s.replace("[", "");
+        s = s.replace("]", "");
+        int ci = Integer.parseInt(s);
+        ci = ci + 1;
+
+        String n = Integer.toString(ci);
+        char[] ch = n.toCharArray();
+
+        int[] intArray = new int[ch.length];
+        for (int i = 0; i < ch.length; i++) {
+            intArray[i] = Character.getNumericValue(ch[i]);
+        }
+        System.out.println(Arrays.toString(intArray));
 
 
 
