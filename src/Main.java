@@ -32,8 +32,6 @@ public class Main {
         for (int i = 0; i < a.length; i++) {
             j = Math.min(a[i],j);
             oss = Math.max(a[i], oss);
-            binar = Arrays.binarySearch(a, j);
-            binarmax = Arrays.binarySearch(a, oss);
 
 
         }
