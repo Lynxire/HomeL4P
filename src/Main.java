@@ -24,32 +24,43 @@ public class Main {
 //        }
 //
 //        //2  //3
-//        int j = a[0];
-//        int oss = a[0];
-//        for (int i = 0; i < a.length; i++) {
-//            j = Math.min(a[i],j)
-//            oss = Math.max(a[i], oss);
-//        System.out.println(Arrays.binarySearch(a, j));
-//        System.out.println(Arrays.binarySearch(a, oss));
-//
-//
-//        }
-//
-//
-//          int o = Math.max(a[0],j);
-//        int o1 = Math.min(a[0],j);
-//        System.out.println(Arrays.binarySearch(a, o));
-//        System.out.println(Arrays.binarySearch(a, o1));
-
-        //4
         int[] a = {1,2,0,4};
-        int e = 0;
+        int j = a[0];
+        int oss = a[0];
+        int binar = 0;
+        int binarmax = 0;
         for (int i = 0; i < a.length; i++) {
-            if (a[i] == 0){
-                e++;
+            j = Math.min(a[i],j);
+            oss = Math.max(a[i], oss);
+            binar = Arrays.binarySearch(a, j);
+            binarmax = Arrays.binarySearch(a, oss);
+
+
+        }
+        for (int i = 0; i < a.length; i++) {
+            if(a[i] == j)
+            {
+                binar = i;
+            }
+            else if(a[i] == oss){
+                binarmax = i;
             }
         }
-        System.out.println("Нулевых значений = " + e);
+        System.out.println(j + "min");
+        System.out.println(oss + "max");
+        System.out.println(binar);
+        System.out.println(binarmax);
+
+
+        //4
+
+//        int e = 0;
+//        for (int i = 0; i < a.length; i++) {
+//            if (a[i] == 0){
+//                e++;
+//            }
+//        }
+//        System.out.println("Нулевых значений = " + e);
 
         // 5
 //       int j = a.length;
