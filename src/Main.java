@@ -42,22 +42,15 @@ public class Main {
 //        System.out.println(Arrays.binarySearch(a, o1));
 
         //4
-//
-//        int i = 0;
-//        while (i<a.length){
-//            int j = a[0];
-//            i++;
-//            j = a[i];
-//            int e = 0;
-//            if(j == 0){
-//                e++;
-//                System.out.println(e);
-//            }
-//            else
-//            {
-//                System.out.println("none");
-//            }
-//        }
+        int[] a = {1,2,0,4};
+        int e = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == 0){
+                e++;
+            }
+        }
+        System.out.println("Нулевых значений = " + e);
+
         // 5
 //       int j = a.length;
 //        while (j > 0){
@@ -84,22 +77,22 @@ public class Main {
 //        }
 //        System.out.println(cc);
         //7
-        int[] a = {1,2,3,4};
-        String s = Arrays.toString(a).replace(",", "");
-        s = s.replace(" ", "");
-        s = s.replace("[", "");
-        s = s.replace("]", "");
-        int ci = Integer.parseInt(s);
-        ci = ci + 1;
 
-        String n = Integer.toString(ci);
-        char[] ch = n.toCharArray();
-
-        int[] intArray = new int[ch.length];
-        for (int i = 0; i < ch.length; i++) {
-            intArray[i] = Character.getNumericValue(ch[i]);
-        }
-        System.out.println(Arrays.toString(intArray));
+//        String s = Arrays.toString(a).replace(",", "");
+//        s = s.replace(" ", "");
+//        s = s.replace("[", "");
+//        s = s.replace("]", "");
+//        int ci = Integer.parseInt(s);
+//        ci = ci + 1;
+//
+//        String n = Integer.toString(ci);
+//        char[] ch = n.toCharArray();
+//
+//        int[] intArray = new int[ch.length];
+//        for (int i = 0; i < ch.length; i++) {
+//            intArray[i] = Character.getNumericValue(ch[i]);
+//        }
+//        System.out.println(Arrays.toString(intArray));
 
 
 
