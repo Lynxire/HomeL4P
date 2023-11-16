@@ -23,17 +23,19 @@ public class Main {
 //            System.out.println(i);
 //        }
 //
-//        //2
+//        //2  //3
 //        int j = a[0];
+//        int oss = a[0];
 //        for (int i = 0; i < a.length; i++) {
-//            j = a[i];
+//            j = Math.min(a[i],j)
+//            oss = Math.max(a[i], oss);
+//        System.out.println(Arrays.binarySearch(a, j));
+//        System.out.println(Arrays.binarySearch(a, oss));
 //
 //
 //        }
-//        System.out.println(Math.min(a[0], j));
-//        System.out.println(Math.max(a[0], j));
 //
-//          //3
+//
 //          int o = Math.max(a[0],j);
 //        int o1 = Math.min(a[0],j);
 //        System.out.println(Arrays.binarySearch(a, o));
@@ -82,7 +84,7 @@ public class Main {
 //        }
 //        System.out.println(cc);
         //7
-        int[] a = {9,9,9};
+        int[] a = {1,2,3,4};
         String s = Arrays.toString(a).replace(",", "");
         s = s.replace(" ", "");
         s = s.replace("[", "");
